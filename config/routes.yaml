@@ -1,3 +1,8 @@
-controllers:
+app:
     resource: ../src/AppBundle/Controller
     type: attribute
+    prefix: /
+admin:
+    resource: ../src/AdminBundle/Controller
+    type: attribute
+    prefix: /admin
