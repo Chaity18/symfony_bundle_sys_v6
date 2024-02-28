@@ -1,0 +1,7 @@
+twig:
+    paths:
+        '%kernel.project_dir%/src/AppBundle/Resources/views': AppBundle
+        '%kernel.project_dir%/src/AdminBundle/Resources/views': AdminBundle
+when@test:
+    twig:
+        strict_variables: true
