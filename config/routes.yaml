@@ -1,8 +1,18 @@
 app:
     resource: ../src/AppBundle/Controller
     type: attribute
-    prefix: /
+    prefix: /{_locale}
+    requirements:
+        _locale: en|fr
+    locale: en
+
 admin:
     resource: ../src/AdminBundle/Controller
     type: attribute
-    prefix: /admin
+    prefix: /{_locale}/admin
+    requirements:
+        _locale: en|fr
+
+index:
+    path: '/'
+    controller: 'AppBundle\Controller\MainController::index'
